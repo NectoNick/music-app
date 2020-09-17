@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1",
+    "name": "Favorites",
+    "playlists": [
+      {
+        "id": "1",
+        "name": "Playlist 1",
+        "background": "#a7e8f6"
+      },
+      {
+        "id": "2",
+        "name": "Playlist 223-234-3224",
+        "background": "#44b257"
+      },
+      {
+        "id": "3",
+        "name": "Playlist 36",
+        "background": "#e5ed67"
+      },
+      {
+        "id": "4",
+        "name": "Playlist 4",
+        "background": "#F62D67"
+      },
+      {
+        "id": "5",
+        "name": "Playlist 5",
+        "background": "#a7e8f6"
+      },
+      {
+        "id": "6",
+        "name": "Playlist 6",
+        "background": "#F6BE1E"
+      },
+      {
+        "id": "7",
+        "name": "Playlist 7",
+        "background": "#a7e8f6"
+      }
+    ]
+
+  },
+  {
+    "id": "2",
+    "name": "Recommended",
+    "playlists": [
+      {
+        "id": "9",
+        "name": "Recommended 1",
+        "background": "#44b257"
+      },
+      {
+        "id": "10",
+        "name": "Recommended 2",
+        "background": "#a7e8f6"
+      },
+      {
+        "id": "11",
+        "name": "Recommended 3",
+        "background": "#F6BE1E"
+      },
+      {
+        "id": "12",
+        "name": "Recommended 4",
+        "background": "#a7e8f6"
+      }
+    ]
+
+  }
+]

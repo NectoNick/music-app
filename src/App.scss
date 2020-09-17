@@ -1,0 +1,40 @@
+.app-root {
+  height: inherit;
+  // font-size: /*calc(10px + 1.5vmin);*/calc(3vmin + 8px);
+
+  .app-header {
+    background-color: #c8dceead;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    .app-logo-container {
+      padding-left: 1vh;
+
+      .app-logo {
+        height: 7.5vh;
+        pointer-events: none;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .app-logo {
+          animation: app-logo-spin infinite 20s linear;
+        }
+      }
+
+      @keyframes app-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  .app-content {
+    padding-top: 3.5vmin;
+  }
+}

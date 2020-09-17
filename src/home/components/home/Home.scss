@@ -1,0 +1,11 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 92%;
+
+  @media screen and (max-height: 700px) {
+    & {
+      font-size: calc(8px + 1vmin);
+    }
+  }
+}
