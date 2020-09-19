@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 
 import logo from './logo.svg';
 import './App.scss';
-import Home from './home/components/home/Home';
-import Playlist from './playlist/components/playlist/Playlist';
+import Home from './home/routes/home/Home';
+import Playlist from './playlist/routes/playlist/Playlist';
 
 
 export default function App() {

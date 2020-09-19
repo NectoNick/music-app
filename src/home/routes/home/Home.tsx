@@ -6,7 +6,7 @@ import './Home.scss';
 import { RootState } from '../../../store/root-state';
 import { loadCollections } from '../../store/actions';
 import * as selectors from '../../store/selectors';
-import Collection from '../collection/Collection';
+import Collection from '../../components/collection/Collection';
 import { Spinner } from '../../../shared/';
 
 

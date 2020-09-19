@@ -1,6 +1,6 @@
 import { createAction, createAsyncAction } from 'typesafe-actions';
 
-import { PlaylistModel } from '../../models'
+import { PlaylistModel, Id } from '../../models';
 
 
 export const loadPlaylist = createAsyncAction(
@@ -10,3 +10,5 @@ export const loadPlaylist = createAsyncAction(
 )<string, PlaylistModel, string>();
 
 export const resetPlaylist = createAction('RESET_PLAYLIST')();
+
+export const playTrack = createAction('PLAY_TRACK')<Id>();

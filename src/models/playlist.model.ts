@@ -1,9 +1,19 @@
-import { TrackModel } from './track.model';
+import { TrackModel, TrackNetworkModel } from './track.model';
 
 
-export interface PlaylistModel {
-  id: string;
+export type Id = string;
+
+export interface PlaylistNetworkModel {
+  id: Id;
   name: string;
   background: string;
-  tracks: TrackModel[];
+  tracks: TrackNetworkModel[];
+}
+
+export interface PlaylistModel {
+  id: Id;
+  name: string;
+  background: string;
+  trackIds: Id[];
+  tracks: Record<Id, TrackModel>;
 }
