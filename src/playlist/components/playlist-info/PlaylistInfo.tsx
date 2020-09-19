@@ -25,7 +25,7 @@ function PlaylistInfo({ playlist }: Props) {
       </Col>
       <Col>
         <h3>{ playlist?.name }</h3>
-        <p>{ playlist?.tracks.length } tracks</p>
+        <p>{ Object.values(playlist?.tracks || {}).length } tracks</p>
       </Col>
     </Row>
   );
