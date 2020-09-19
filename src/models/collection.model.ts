@@ -1,8 +1,8 @@
-import { PlaylistModel } from './playlist.model';
+import { PlaylistInfoModel } from './playlist.model';
 
 
 export interface CollectionModel {
   id: string;
   name: string;
-  playlists: PlaylistModel[]
+  playlists: PlaylistInfoModel[]
 }

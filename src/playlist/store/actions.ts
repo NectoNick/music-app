@@ -1,13 +1,16 @@
 import { createAction, createAsyncAction } from 'typesafe-actions';
 
-import { PlaylistModel, Id } from '../../models';
+import { Id } from '../../models';
+import { State } from './state';
 
+
+type PlaylistPayloadModel = Pick<State, 'playlistInfo' | 'tracks' | 'trackIds'>;
 
 export const loadPlaylist = createAsyncAction(
   'LOAD_PLAYLIST_REQUEST',
   'LOAD_PLAYLIST_SUCCESS',
   'LOAD_PLAYLIST_FAILURE',
-)<string, PlaylistModel, string>();
+)<string, PlaylistPayloadModel, string>();
 
 export const resetPlaylist = createAction('RESET_PLAYLIST')();
 

@@ -11,21 +11,22 @@ type Props = ReturnType<typeof mapStateToProps>;
 
 const mapStateToProps = ({ playlist }: RootState) => {
   return {
-    playlist: selectors.getPlaylist(playlist),
+    playlistInfo: selectors.getPlaylistInfo(playlist),
+    tracksCount: selectors.getTracksCount(playlist),
   };
 };
 
-function PlaylistInfo({ playlist }: Props) {
+function PlaylistInfo({ playlistInfo, tracksCount }: Props) {
   return (
     <Row>
       <Col>
         <div className="playlist-background"
-             style={ { backgroundColor: playlist?.background } }>
+             style={ { backgroundColor: playlistInfo?.background } }>
         </div>
       </Col>
       <Col>
-        <h3>{ playlist?.name }</h3>
-        <p>{ Object.values(playlist?.tracks || {}).length } tracks</p>
+        <h3>{ playlistInfo?.name }</h3>
+        <p>{ tracksCount } track{ tracksCount === 1 ? '' : 's' }</p>
       </Col>
     </Row>
   );

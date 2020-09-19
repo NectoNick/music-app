@@ -1,4 +1,4 @@
-import { TrackModel, TrackNetworkModel } from './track.model';
+import { TrackNetworkModel } from './track.model';
 
 
 export type Id = string;
@@ -10,10 +10,8 @@ export interface PlaylistNetworkModel {
   tracks: TrackNetworkModel[];
 }
 
-export interface PlaylistModel {
+export interface PlaylistInfoModel {
   id: Id;
   name: string;
   background: string;
-  trackIds: Id[];
-  tracks: Record<Id, TrackModel>;
 }

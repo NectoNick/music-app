@@ -6,17 +6,16 @@ import { TrackModel } from '../../models';
 
 type TrackList = TrackModel[];
 
-export const getPlaylist = (state: State) => state.playlist;
+export const getPlaylistInfo = (state: State) => state.playlistInfo;
 
-const getTracks = createSelector(
-  getPlaylist,
-  (playlist) => playlist?.tracks || {}
+export const getTrackIds = (state: State) => state.trackIds;
+
+export const getTracksCount = createSelector(
+  getTrackIds,
+  (trackIds): number => trackIds.length
 );
 
-const getTrackIds = createSelector(
-  getPlaylist,
-  (playlist) => playlist?.trackIds || []
-);
+const getTracks = (state: State) => state.tracks;
 
 export const getTrackList = createSelector(
   [getTracks, getTrackIds],
