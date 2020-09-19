@@ -10,7 +10,7 @@ const collections = createReducer(initialState.collections)
 
 const isLoading = createReducer(initialState.isLoading)
   .handleAction(loadCollections.request, () => true)
-  .handleAction(loadCollections.success, () => false);
+  .handleAction([loadCollections.success, loadCollections.failure], () => false);
 
 export const homeReducer = combineReducers<State>({
   collections,
